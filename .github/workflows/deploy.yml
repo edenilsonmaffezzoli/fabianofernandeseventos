@@ -27,17 +27,20 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v4
       
+    - name: Clean up unnecessary files
+      run: |
+        rm -rf venv/
+        rm -rf src/
+        rm -rf __pycache__/
+        rm -f *.py
+        rm -f requirements.txt
+        find . -name "*.pyc" -delete
+        find . -name "__pycache__" -type d -exec rm -rf {} +
+      
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: '.'
-        exclude: |
-          venv/
-          src/
-          *.py
-          requirements.txt
-          __pycache__/
-          *.pyc
+        path: '.'}]}}}
         
     - name: Deploy to GitHub Pages
       id: deployment
