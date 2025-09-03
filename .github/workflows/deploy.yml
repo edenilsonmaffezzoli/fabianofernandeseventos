@@ -31,6 +31,13 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: '.'
+        exclude: |
+          venv/
+          src/
+          *.py
+          requirements.txt
+          __pycache__/
+          *.pyc
         
     - name: Deploy to GitHub Pages
       id: deployment
