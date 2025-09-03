@@ -1,0 +1,57 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Decorative border -->
+  <rect x="10" y="10" width="380" height="280" fill="none" stroke="#dc2626" stroke-width="2" rx="10"/>
+  
+  <!-- Graduation cap -->
+  <g transform="translate(200, 120)">
+    <!-- Cap base -->
+    <rect x="-40" y="-10" width="80" height="8" fill="#1f2937" rx="2"/>
+    <!-- Cap top -->
+    <rect x="-50" y="-18" width="100" height="4" fill="#1f2937"/>
+    <!-- Tassel -->
+    <line x1="30" y1="-14" x2="45" y2="10" stroke="#fbbf24" stroke-width="3"/>
+    <circle cx="45" cy="10" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Diploma -->
+  <g transform="translate(200, 180)">
+    <!-- Diploma scroll -->
+    <rect x="-30" y="-8" width="60" height="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" rx="2"/>
+    <!-- Ribbon -->
+    <rect x="-5" y="-12" width="10" height="24" fill="#dc2626"/>
+    <!-- Text lines -->
+    <line x1="-20" y1="-4" x2="20" y2="-4" stroke="#374151" stroke-width="1"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#374151" stroke-width="1"/>
+    <line x1="-20" y1="4" x2="20" y2="4" stroke="#374151" stroke-width="1"/>
+  </g>
+  
+  <!-- Stars decoration -->
+  <g transform="translate(120, 80)">
+    <polygon points="0,-8 2,-2 8,-2 3,2 5,8 0,4 -5,8 -3,2 -8,-2 -2,-2" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(280, 90)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.25,1.5 3.75,6 0,3 -3.75,6 -2.25,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(150, 220)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.25,1.5 3.75,6 0,3 -3.75,6 -2.25,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(250, 210)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.25,1.5 3.75,6 0,3 -3.75,6 -2.25,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="250" text-anchor="middle" font-family="serif" font-size="24" font-weight="bold" fill="#dc2626">Formaturas</text>
+  
+  <!-- Decorative flourishes -->
+  <g transform="translate(200, 260)">
+    <path d="M -50 0 Q -25 -5, 0 0 Q 25 5, 50 0" fill="none" stroke="#dc2626" stroke-width="1"/>
+    <circle cx="-50" cy="0" r="2" fill="#dc2626"/>
+    <circle cx="50" cy="0" r="2" fill="#dc2626"/>
+  </g>
+</svg>
