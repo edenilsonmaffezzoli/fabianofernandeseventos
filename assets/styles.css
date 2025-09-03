@@ -89,7 +89,7 @@ body {
 }
 
 .navbar {
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .navbar .container {
@@ -101,26 +101,29 @@ body {
 .nav-brand {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .nav-brand .logo {
-    height: 91px;
+    height: 120px;
     width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .brand-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #2c3e50;
     margin: 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .brand-text span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #e74c3c;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .nav-menu {
@@ -663,8 +666,9 @@ section {
 }
 
 .footer-brand .nav-brand .logo {
-    height: 91px;
+    height: 120px;
     width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .footer-brand .brand-text h3 {
