@@ -733,7 +733,96 @@ section {
 }
 
 /* Responsive Design */
+
+/* Large screens - Desktop */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+        padding: 0 40px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Medium-large screens - Small desktop/Large laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    
+    .nav-brand .logo {
+        height: 100px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Medium screens - Tablet landscape */
+@media (min-width: 769px) and (max-width: 991px) {
+    .container {
+        max-width: 900px;
+        padding: 0 25px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .service-card {
+        padding: 30px 25px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .contact-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+    
+    .nav-brand .logo {
+        height: 90px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small screens - Tablet portrait and large phones */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
     .nav-menu {
         display: none;
         position: absolute;
@@ -756,24 +845,41 @@ section {
 
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
+        line-height: 1.4;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+        text-align: center;
     }
 
     .about-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
+        text-align: center;
     }
 
     .contact-main {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    .contact-card {
+        padding: 20px;
     }
 
     .form-row {
@@ -806,10 +912,131 @@ section {
     .section-header h2 {
         font-size: 2rem;
     }
+    
+    .nav-brand .logo {
+        height: 80px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.3rem;
+    }
+    
+    .brand-text span {
+        font-size: 0.8rem;
+    }
+    
+    .header {
+        padding: 15px 0;
+    }
+}
 
+/* Extra small screens - Small phones */
+@media (max-width: 480px) {
     .container {
         padding: 0 15px;
     }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        gap: 15px;
+    }
+    
+    .service-card {
+        padding: 20px 15px;
+    }
+    
+    .contact-form {
+        padding: 20px 15px;
+    }
+    
+    .contact-card {
+        padding: 15px;
+    }
+    
+    .nav-brand .logo {
+        height: 70px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.1rem;
+    }
+    
+    .brand-text span {
+        font-size: 0.7rem;
+    }
+    
+    .footer-content {
+        gap: 15px;
+    }
+    
+    .footer-brand h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-brand p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens - Very small phones */
+@media (max-width: 360px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero {
+        padding: 50px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .service-card {
+        padding: 15px 10px;
+    }
+    
+    .contact-form {
+        padding: 15px 10px;
+    }
+    
+    .nav-brand .logo {
+        height: 60px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1rem;
+    }
+    
+    .brand-text span {
+        font-size: 0.6rem;
+    }
+}
 
     section {
         padding: 60px 0;
