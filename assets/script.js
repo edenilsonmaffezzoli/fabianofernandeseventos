@@ -44,15 +44,7 @@ let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.98)';
-        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = 'none';
-    }
-    
+    header.classList.toggle('header--scrolled', scrollTop > 80);
     lastScrollTop = scrollTop;
 });
 
@@ -166,42 +158,31 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Service card hover effects
-const serviceCards = document.querySelectorAll('.service-card');
+// Service card hover is handled entirely by CSS
 
-serviceCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
-    });
-});
-
-// Intersection Observer for animations
+// Intersection Observer for staggered entrance animations
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -40px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('animated');
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe elements for animation
-const animatedElements = document.querySelectorAll('.service-card, .about-text, .about-image, .contact-card, .contact-btn');
+const animatedEls = document.querySelectorAll(
+    '.service-card, .about-text, .about-image, .contact-card, .contact-btn, .area-card'
+);
 
-animatedElements.forEach(element => {
-    element.style.opacity = '0';
-    element.style.transform = 'translateY(30px)';
-    element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(element);
+animatedEls.forEach((el, i) => {
+    el.classList.add('will-animate');
+    el.style.transitionDelay = `${(i % 4) * 70}ms`;
+    observer.observe(el);
 });
 
 // Hero scroll indicator

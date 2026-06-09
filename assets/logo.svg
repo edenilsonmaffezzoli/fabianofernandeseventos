@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#d93025" role="img" aria-label="Fabiano Fernandes Eventos">
+  <!-- Flame rising from hat crown -->
+  <path d="M50,5 C49,11 44,19 44,28 C44,36 47,39 50,39 C53,39 56,36 56,28 C56,19 51,11 50,5 Z"/>
+  <!-- Hat crown: two rounded bumps with slight center dip -->
+  <path d="M18,66 C18,48 26,32 38,32 C42,32 46,36 50,40 C54,36 58,32 62,32 C74,32 82,48 82,66 Z"/>
+  <!-- Hat band -->
+  <rect x="17" y="68" width="66" height="14" rx="3"/>
+</svg>
