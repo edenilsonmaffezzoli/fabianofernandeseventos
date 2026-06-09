@@ -148,7 +148,7 @@ section {
 }
 
 .nav-brand .logo {
-  height: 56px;
+  height: 120px;
   width: auto;
 }
 
@@ -798,7 +798,7 @@ section {
 }
 
 .footer-brand .nav-brand .logo {
-  height: 44px;
+  height: 96px;
   width: auto;
   opacity: 0.9;
 }
@@ -1072,7 +1072,7 @@ section {
   section { padding: var(--sp-12) 0; }
   .container { padding: 0 var(--sp-4); }
 
-  .nav-brand .logo { height: 44px; }
+  .nav-brand .logo { height: 77px; }
 
   .hero-content { padding: 0 var(--sp-4); }
 
