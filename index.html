@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabiano Fernandes Eventos - Buffet e Churrasco</title>
     <meta name="description" content="Especialistas em buffet e churrasco para casamentos, formaturas, aniversários e eventos corporativos em Blumenau, SC.">
+    <!-- Google Consent Mode (default denied) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+        });
+    </script>
     <link rel="icon" type="image/png" href="./assets/logo-BHDzhw-A.png">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -363,6 +375,20 @@
         </div>
     </footer>
 
+    <div id="cookieBanner" class="cookie-banner" hidden>
+        <div class="cookie-banner__content">
+            <p class="cookie-banner__text">
+                Utilizamos cookies de análise para entender como você usa nosso site e melhorar sua experiência.
+                <a href="#" class="cookie-banner__link">Saiba mais</a>
+            </p>
+            <div class="cookie-banner__actions">
+                <button type="button" id="cookieReject" class="cookie-banner__btn cookie-banner__btn--secondary">Recusar</button>
+                <button type="button" id="cookieAccept" class="cookie-banner__btn cookie-banner__btn--primary">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/analytics.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>

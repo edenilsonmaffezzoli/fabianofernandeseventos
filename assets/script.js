@@ -58,6 +58,7 @@ window.addEventListener('scroll', () => {
 
 // Active section highlighting
 const sections = document.querySelectorAll('section[id]');
+let currentActiveSection = null;
 
 function updateActiveSection() {
     const scrollPos = window.scrollY + 150;
@@ -74,6 +75,13 @@ function updateActiveSection() {
                     link.classList.add('active');
                 }
             });
+
+            if (sectionId !== currentActiveSection) {
+                currentActiveSection = sectionId;
+                document.dispatchEvent(new CustomEvent('sectionchange', {
+                    detail: { sectionId: sectionId }
+                }));
+            }
         }
     });
 }
