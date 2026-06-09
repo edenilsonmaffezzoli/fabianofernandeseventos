@@ -462,12 +462,14 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
+    width: 100%;
     background: #f8f9fa;
     border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 12px;
     padding: 18px 20px;
     font-weight: 600;
     color: #2c3e50;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -822,7 +824,8 @@ section {
         height: 100px;
     }
     
-    .brand-text h1 {
+    .brand-text h1,
+    .brand-text .brand-name {
         font-size: 1.6rem;
     }
 }
@@ -867,7 +870,8 @@ section {
         height: 90px;
     }
     
-    .brand-text h1 {
+    .brand-text h1,
+    .brand-text .brand-name {
         font-size: 1.5rem;
     }
 }
@@ -972,7 +976,8 @@ section {
         height: 80px;
     }
     
-    .brand-text h1 {
+    .brand-text h1,
+    .brand-text .brand-name {
         font-size: 1.3rem;
     }
     
@@ -1029,7 +1034,8 @@ section {
         height: 70px;
     }
     
-    .brand-text h1 {
+    .brand-text h1,
+    .brand-text .brand-name {
         font-size: 1.1rem;
     }
     
@@ -1084,7 +1090,8 @@ section {
         height: 60px;
     }
     
-    .brand-text h1 {
+    .brand-text h1,
+    .brand-text .brand-name {
         font-size: 1rem;
     }
     

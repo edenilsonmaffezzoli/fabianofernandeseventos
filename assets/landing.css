@@ -1,0 +1,82 @@
+/* Landing pages (cidades) - reaproveita styles.css e adiciona apenas o hero */
+.lp-hero {
+    margin-top: 0;
+    padding: 160px 0 80px;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.lp-hero .container {
+    max-width: 820px;
+}
+
+.lp-hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 18px;
+}
+
+.lp-hero h1 span {
+    color: #e74c3c;
+}
+
+.lp-hero .lp-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.92;
+    margin-bottom: 30px;
+}
+
+.lp-breadcrumb {
+    padding: 16px 0;
+    background: #f8f9fa;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.lp-breadcrumb a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.lp-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.lp-breadcrumb span {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+.lp-content p {
+    max-width: 820px;
+    margin: 0 auto 20px;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.lp-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.lp-cta-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .lp-hero {
+        padding: 130px 0 60px;
+    }
+
+    .lp-hero h1 {
+        font-size: 2rem;
+    }
+}
