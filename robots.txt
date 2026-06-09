@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabianofernandeseventos.com.br/sitemap.xml

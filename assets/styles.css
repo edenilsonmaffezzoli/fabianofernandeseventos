@@ -109,11 +109,13 @@ body {
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
-.brand-text h1 {
+.brand-text h1,
+.brand-text .brand-name {
     font-size: 1.8rem;
     font-weight: 700;
     color: #2c3e50;
     margin: 0;
+    line-height: 1.2;
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -432,6 +434,59 @@ section {
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Areas Section */
+.areas {
+    background: #fff;
+}
+
+.areas-intro {
+    max-width: 800px;
+    margin: -30px auto 40px;
+    text-align: center;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.areas-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.area-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 18px 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.area-card svg {
+    color: #e74c3c;
+    flex-shrink: 0;
+}
+
+.area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: rgba(231, 76, 60, 0.3);
+}
+
+.areas-note {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
 }
 
 /* Contact Section */

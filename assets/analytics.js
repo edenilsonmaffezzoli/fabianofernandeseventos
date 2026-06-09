@@ -11,6 +11,7 @@
         inicio: 'Início',
         servicos: 'Serviços',
         sobre: 'Sobre',
+        areas: 'Áreas de Atendimento',
         contato: 'Contato'
     };
 
